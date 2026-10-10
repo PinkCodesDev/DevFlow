@@ -1,0 +1,280 @@
+.main-content {
+  flex: 1;
+  padding: 32px;
+  overflow: auto;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 28px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.dashboard-header p {
+  margin-top: 8px;
+  color: #6b7280;
+}
+
+.dashboard-date {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.stat-card,
+.dashboard-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+.stat-card {
+  padding: 18px;
+}
+
+.stat-card h3 {
+  margin: 10px 0 6px;
+  font-size: 24px;
+}
+
+.stat-card span,
+.stat-title {
+  color: #6b7280;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 18px;
+}
+
+.dashboard-card {
+  padding: 20px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.text-button,
+.add-task-button {
+  border: none;
+  background: transparent;
+  color: #4f46e5;
+  cursor: pointer;
+}
+
+.task-items {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.task-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-title.completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.task-category {
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  font-size: 12px;
+}
+
+.task-time {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.add-task-button {
+  margin-top: 20px;
+}
+
+.focus-card {
+  text-align: center;
+}
+
+.timer-circle {
+  width: 170px;
+  height: 170px;
+  margin: 20px auto;
+  border-radius: 50%;
+  border: 9px solid #e0e7ff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-circle strong {
+  font-size: 32px;
+}
+
+.timer-label {
+  color: #6366f1;
+  margin-bottom: 5px;
+}
+
+.primary-button {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 16px;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+
+.goal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.goal-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+
+.progress-track {
+  height: 5px;
+  background: #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #4f46e5;
+}
+
+.productivity-card {
+  min-height: 260px;
+}
+
+.fake-chart {
+  height: 180px;
+}
+
+.fake-chart svg {
+  width: 100%;
+  height: 100%;
+}
+
+.fake-chart polyline {
+  fill: none;
+  stroke: #6366f1;
+  stroke-width: 3;
+}
+
+.upcoming-task {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.upcoming-task p {
+  margin: 3px 0 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.task-dot {
+  width: 11px;
+  height: 11px;
+  margin-top: 5px;
+  border: 2px solid #9ca3af;
+  border-radius: 50%;
+}
+
+.weekly-focus p {
+  margin: 4px 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.bar-chart {
+  height: 150px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.bar-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 7px;
+}
+
+.bar {
+  width: 70%;
+  min-height: 10px;
+  background: #6366f1;
+  border-radius: 5px 5px 0 0;
+}
+
+.bar-column span {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+@media (max-width: 1100px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .sidebar {
+    display: none;
+  }
+
+  .dashboard-grid,
+  .stat-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
