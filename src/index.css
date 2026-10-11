@@ -55,35 +55,27 @@ select {
   gap: 8px;
 }
 
-.sidebar button {
+.nav-link {
   width: 100%;
   padding: 12px 14px;
-
-  border: none;
   border-radius: 10px;
-
-  background: transparent;
   color: #4b5563;
-
-  text-align: left;
+  text-decoration: none;
   font-size: 15px;
   font-weight: 500;
-
-  cursor: pointer;
-
   transition:
     background 0.2s ease,
     color 0.2s ease,
     transform 0.2s ease;
 }
 
-.sidebar button:hover {
+.nav-link:hover {
   background: #f3f4f6;
   color: #111827;
   transform: translateX(2px);
 }
 
-.sidebar button:first-child {
+.nav-link.active {
   background: #eef2ff;
   color: #4f46e5;
 }

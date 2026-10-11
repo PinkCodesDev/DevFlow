@@ -1,0 +1,29 @@
+.projects-layout { display:grid; grid-template-columns:minmax(0,1.3fr) minmax(330px,1fr); gap:24px; align-items:start; }
+.projects-cards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+.projects-cards>.planner-empty { grid-column:1/-1; }
+.project-card { display:flex; flex-direction:column; text-align:left; color:var(--night-text); cursor:pointer; }
+.project-card[aria-pressed="true"] { border-color:#a398ee; background:linear-gradient(135deg,#a398ee0b,transparent),var(--night-panel); }
+.project-card:hover { border-color:#7f76af; }
+.project-symbol { display:grid; place-items:center; width:34px; height:34px; background:#2c2850; color:#c8beff; border-radius:9px; font-size:23px; }
+.project-card h2 { margin-top:20px; line-height:1.5; overflow-wrap:anywhere; }
+.project-card p { margin-top:10px; color:var(--night-muted); font-size:12px; line-height:1.8; overflow-wrap:anywhere; }
+.project-stack { font-size:11px; color:#aac7f5; margin-top:18px; overflow-wrap:anywhere; }
+.project-card-footer { display:flex; justify-content:space-between; gap:12px; border-top:1px solid var(--night-border); padding-top:16px; margin-top:20px; color:var(--night-muted); font-size:10px; }
+.project-detail>h2 { font-size:25px; margin-top:20px; overflow-wrap:anywhere; }
+.project-description { white-space:pre-wrap; overflow-wrap:anywhere; font-size:13px; line-height:1.8; color:var(--night-muted); margin-top:12px !important; }
+.project-detail dl { display:grid; gap:14px; padding:20px 0; margin:10px 0; }
+.project-detail dl>div { display:flex; justify-content:space-between; gap:20px; font-size:12px; }
+.project-detail dt { color:var(--night-muted); white-space:nowrap; }
+.project-detail dd { margin:0; text-align:right; overflow-wrap:anywhere; }
+.project-links { display:flex; gap:16px; margin-bottom:26px; }
+.project-links a { color:var(--night-accent); font-size:12px; text-decoration:none; }
+.project-milestones { list-style:none; padding:0; margin:18px 0; }
+.project-milestones li+li { margin-top:8px; }
+.project-milestones label { display:flex; flex-direction:row; align-items:center; gap:12px; padding:12px; background:var(--night-bg); border:1px solid #28344b; border-radius:9px; cursor:pointer; }
+.project-milestones input { width:17px; height:17px; flex:0 0 auto; accent-color:#a398ee; }
+.project-milestones span { font-size:12px; line-height:1.7; overflow-wrap:anywhere; }
+.project-milestones .is-done { color:var(--night-muted); text-decoration:line-through; }
+.project-add-milestone { margin-top:24px; padding-top:20px; border-top:1px solid var(--night-border); }
+.project-add-milestone>div { display:flex; gap:8px; margin-top:10px; }
+.project-add-milestone input { flex:1; }
+@media(max-width:1300px) { .projects-cards { grid-template-columns:1fr; } }

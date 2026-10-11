@@ -1,0 +1,47 @@
+html[data-theme="light"] {
+  color-scheme:light;
+  --night-bg:#f3f5fb; --night-panel:#ffffff; --night-card:#f9faff; --night-hover:#e9edf8;
+  --night-border:#d4dceb; --night-text:#1b2540; --night-muted:#52617c;
+  --night-accent:#5942b8; --night-primary:#6554d9; --night-primary-hover:#5140c0;
+}
+html[data-theme="light"] .app { background:radial-gradient(ellipse at top right,#e9e5ff80,transparent 55%),var(--night-bg); }
+html[data-theme="light"] .nav-link.active { background:#ece7ff; color:#473598; }
+html[data-theme="light"] :is(.planner-tabs,.applications-table th,.calendar-weekdays,.calendar-day.outside-month) { background:#edf0f8; color:var(--night-muted); }
+html[data-theme="light"] :is(.planner-tag,.task-category,.task-count,.applications-status,.applications-board-heading h2 span,.focus-heading-badge,.focus-empty-symbol,.project-symbol,.applications-monogram) { background:#eae5fb; color:#51408b; border-color:#d0c5ef; }
+html[data-theme="light"] :is(.planner-tabs button[aria-pressed="true"],.focus-modes button[aria-pressed="true"],.calendar-day[aria-pressed="true"],.focus-selected-task) { background:#eae5fb; color:#473598; }
+html[data-theme="light"] :is(.planner-tabs button,.focus-modes button) { color:var(--night-muted); }
+html[data-theme="light"] :is(.focus-view-compact,.focus-ring-inner,.focus-timer-panel) { background:var(--night-panel); }
+html[data-theme="light"] :is(.planner-page,.applications-page,.focus-view) :is(input,select,textarea) { color-scheme:light; }
+html[data-theme="light"] :is(input,textarea)::placeholder { color:#65738c; }
+html[data-theme="light"] :is(.planner-error,.applications-error,.focus-error,.planner-overdue) { color:#992b43; }
+html[data-theme="light"] :is(.planner-success,.applications-notice) { color:#167350; }
+html[data-theme="light"] :is(.applications-deadline.overdue,.applications-status.status-rejected,.settings-danger .settings-symbol) { background:#f9e3e8; color:#992b43; }
+html[data-theme="light"] :is(.applications-deadline.soon,.applications-status.status-assignment) { background:#faefcf; color:#705413; }
+html[data-theme="light"] :is(.applications-status.status-offer,.focus-session-done) { background:#dcf3e9; color:#167350; }
+html[data-theme="light"] :is(.applications-status.status-sent) { background:#e0ebfc; color:#31598d; }
+html[data-theme="light"] :is(.applications-status.status-interview) { background:#ece3fb; color:#654290; }
+html[data-theme="light"] :is(.applications-status.status-withdrawn,.applications-status.status-saved) { background:#e7ebf3; color:#50617a; }
+html[data-theme="light"] .priority-high { background:#f9e3e8; color:#992b43; }
+html[data-theme="light"] .priority-medium { background:#faefcf; color:#705413; }
+html[data-theme="light"] .priority-low { background:#dcf3e9; color:#167350; }
+html[data-theme="light"] :is(.project-stack,.dashboard-week-bars span) { color:var(--night-accent); }
+html[data-theme="light"] :is(.planner-confirm,.applications-delete-confirm) { background:#fff2f5; border-color:#d7a4b0; }
+html[data-theme="light"] :is(.planner-delete,.applications-delete) { color:#992b43; }
+html[data-theme="light"] :is(.applications-table th,.applications-table td,.calendar-day,.goal-footer,.dashboard-task-list li,.dashboard-goal-row,.dashboard-project-row,.dashboard-upcoming-list li,.dashboard-application-list li,.analytics-sessions li,.project-milestones label,.project-add-milestone,.project-card-footer,.calendar-upcoming>button) { border-color:var(--night-border); }
+html[data-theme="light"] :is(.calendar-legend,.calendar-agenda-item,.calendar-chip,.dashboard-dot).source-personal { --entry-color:#7042a3; --entry-bg:#efe3fa; }
+html[data-theme="light"] .source-personal { --entry-color:#7042a3; --entry-bg:#efe3fa; }
+html[data-theme="light"] .source-goals { --entry-color:#167350; --entry-bg:#dcf3e9; }
+html[data-theme="light"] .source-applications { --entry-color:#31598d; --entry-bg:#e0ebfc; }
+html[data-theme="light"] .source-projects { --entry-color:#805914; --entry-bg:#faefcf; }
+html[data-theme="light"] .planner-page progress::-webkit-progress-bar { background:#dce2ef; }
+html[data-theme="light"] .planner-page progress::-webkit-progress-value { background:#8570d8; }
+html[data-theme="light"] .focus-cycle-details { border-color:var(--night-border); }
+html[data-density="compact"] .main-content { padding:22px; }
+html[data-density="compact"] :is(.planner-panel,.applications-stats article,.planner-stats article,.focus-stat-card) { padding:18px; }
+html[data-density="compact"] :is(.planner-header,.applications-header) { margin-bottom:20px; }
+html[data-density="compact"] :is(.planner-stats,.applications-stats,.dashboard-live-grid,.goal-grid,.projects-layout) { gap:14px; }
+html[data-density="compact"] :is(.applications-table td) { padding-top:14px; padding-bottom:14px; }
+html[data-density="compact"] .tasks-page .kanban-card { padding:14px; }
+html[data-density="compact"] .calendar-day { min-height:96px; }
+html[data-density="compact"] .calendar-month { padding:0; }
+html[data-density="compact"] .planner-panel.calendar-month { padding:0; }
